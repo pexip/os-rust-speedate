@@ -1,0 +1,14 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test speedate 0.17.0 --all-targets --all-features
+Features: test-name=rust-speedate:@
+Depends: dh-cargo (>= 31), rustc, librust-chrono-0.4+default-dev (>= 0.4.19-~~), librust-iso8601-0.6+default-dev (>= 0.6.1-~~), librust-paste-1+default-dev (>= 1.0.7-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test speedate 0.17.0 --all-targets
+Features: test-name=librust-speedate-dev:default
+Depends: dh-cargo (>= 31), rustc, librust-chrono-0.4+default-dev (>= 0.4.19-~~), librust-iso8601-0.6+default-dev (>= 0.6.1-~~), librust-paste-1+default-dev (>= 1.0.7-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test speedate 0.17.0 --all-targets --no-default-features
+Features: test-name=librust-speedate-dev:
+Depends: dh-cargo (>= 31), rustc, librust-chrono-0.4+default-dev (>= 0.4.19-~~), librust-iso8601-0.6+default-dev (>= 0.6.1-~~), librust-paste-1+default-dev (>= 1.0.7-~~), @
+Restrictions: allow-stderr, skip-not-installable

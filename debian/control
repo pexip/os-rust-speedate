@@ -1,0 +1,40 @@
+Source: rust-speedate
+Section: rust
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-lexical-parse-float-1+default-dev (>= 1.0.5-~~) <!nocheck>,
+ librust-strum-0.26+default-dev <!nocheck>,
+ librust-strum-0.26+derive-dev <!nocheck>,
+ librust-strum-macros-0.26+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Timo Röhling <roehling@debian.org>
+Standards-Version: 4.7.2
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/speedate]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/speedate
+Homepage: https://github.com/pydantic/speedate/
+X-Cargo-Crate: speedate
+
+Package: librust-speedate-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-lexical-parse-float-1+default-dev (>= 1.0.5-~~),
+ librust-strum-0.26+default-dev,
+ librust-strum-0.26+derive-dev,
+ librust-strum-macros-0.26+default-dev
+Provides:
+ librust-speedate+default-dev (= ${binary:Version}),
+ librust-speedate-0-dev (= ${binary:Version}),
+ librust-speedate-0+default-dev (= ${binary:Version}),
+ librust-speedate-0.17-dev (= ${binary:Version}),
+ librust-speedate-0.17+default-dev (= ${binary:Version}),
+ librust-speedate-0.17.0-dev (= ${binary:Version}),
+ librust-speedate-0.17.0+default-dev (= ${binary:Version})
+Description: Fast and simple datetime, date, time and duration parsing - Rust source code
+ Source code for Debianized Rust crate "speedate"
