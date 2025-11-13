@@ -1,0 +1,11 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -50,7 +50,7 @@
+ path = "benches/main.rs"
+ 
+ [dependencies.lexical-parse-float]
+-version = "1.0.5"
++version = "0.8.5"
+ 
+ [dependencies.strum]
+ version = "0.26"

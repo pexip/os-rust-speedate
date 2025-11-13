@@ -1,6 +1,7 @@
 rust-speedate (0.17.0-1+pexip24u1) pexip; urgency=medium
 
   * Prepare Pexip packaging
+  * Downgrade rust-speedate
 
  -- Huw Jones <huw@pexip.com>  Thu, 13 Nov 2025 11:14:01 +0000
 
