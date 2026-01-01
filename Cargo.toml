@@ -50,7 +50,7 @@ name = "main"
 path = "benches/main.rs"
 
 [dependencies.lexical-parse-float]
-version = "1.0.5"
+version = "1.0.6"
 
 [dependencies.strum]
 version = "0.27"
@@ -60,7 +60,7 @@ features = ["derive"]
 version = "0.27"
 
 [dev-dependencies.chrono]
-version = "0.4.19"
+version = "0.4.42"
 
 [dev-dependencies.iso8601]
 version = "0.6.1"
