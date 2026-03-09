@@ -1,3 +1,9 @@
+rust-speedate (0.17.0-1+pexip25u1) pexip-trixie; urgency=medium
+
+  * Fix up versioning
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Mon, 09 Mar 2026 12:37:40 +0000
+
 rust-speedate (0.17.0-1+pexip24u1+pexip25u1) pexip-trixie; urgency=medium
 
   * Trixie build for product distribution
